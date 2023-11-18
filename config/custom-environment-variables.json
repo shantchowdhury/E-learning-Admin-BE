@@ -1,0 +1,21 @@
+{   
+    "client_url" : "client_url",
+    "string" : "nonacademy_conn_string",
+    "key" : "nonacademy_secret_key",
+    "mail": {
+        "service": "nonacademy_email_host",
+        "smtp" : "nonacademy_email_smtp",
+        "email" : "nonacademy_email",
+        "password" : "nonacademy_email_password"
+    },
+    "google_cloud": {
+        "project_id": "GOOGLE_PROJECT_ID",
+        "bucket" : {
+            "admin_image_bucket" : "ADMIN_IMAGE_BUCKET",
+            "event_image_bucket" : "EVENT_IMAGE_BUCKET",
+            "blog_image_bucket" : "BLOG_IMAGE_BUCKET",
+            "testimonial_image_bucket" : "TESTIMONIAL_IMAGE_BUCKET",
+            "essential_image_bucket" : "ESSENTIAL_IMAGE_BUCKET"
+        }
+    }
+}

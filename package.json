@@ -1,0 +1,40 @@
+{
+  "name": "dashboard-backend",
+  "version": "1.0.0",
+  "description": "dashboard-backend",
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shahnewaz2004/dashboard-backend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^6.8.0",
+    "aws-sdk": "^2.1419.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.8",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "joi": "^17.6.1",
+    "joi-password-complexity": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.6.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,7 @@
+/node_modules
+
+gsc.json
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

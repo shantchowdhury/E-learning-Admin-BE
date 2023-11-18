@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NonAcademy - Email verification</title>
+    <style>
+      *, *::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: sans-serif;
+      }
+
+      .main{
+        padding: 80px 0;
+        width: 100%;
+        background: #F2F2F2;
+      }
+
+      .container{
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 40px;
+      }
+
+      .container img{
+        width: 160px;
+      }
+
+      .container .title{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+        color: #058d27;
+        border: 1px solid #058d27;
+        border-right: 0;
+        border-left: 0;
+        padding: 10px 0;
+      }
+
+      .name{
+        font-weight: 600;
+      }
+
+      .container p{
+        color: #222222;
+        margin-bottom: 1.1rem;
+        line-height: 25px;
+        font-size: 1rem;
+      }
+
+      a{
+        color: red !important;
+      }
+
+      @media only screen and (max-width: 640px) {
+        .container{
+            width: 90% !important;
+        }
+
+        .main{
+          padding: 0;
+        }
+
+        .container .title{
+          font-size: 1.1rem;
+        }
+
+        .container p{
+          font-size: 0.9rem;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+  <div class="main">
+    <div class="container">
+      <img src="https://i.ibb.co/8DmzJjs/logo.png" alt="">
+      <h1 class="title">
+        Response <%= time %>
+      </h1>
+      <p>Hi <span class="name"><%= Name %></span>,</p>
+      <p>
+        <%= Message %>
+      </p>
+
+      <p>
+        If you feel your problem didn't solve, you can resubmit your query from <a target="_blank" href="https://nonacademy.org/contact">Help Center</a>
+      </p>
+      <p>Thanks for your time,<br/>
+        The NonAcademy Team
+      </p>
+    </div>
+  </div>
+  </body>
+</html>

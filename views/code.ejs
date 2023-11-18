@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NonAcademy - Login code</title>
+    <style>
+      *, *::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: sans-serif;
+      }
+
+      .main{
+        padding: 80px 0;
+        width: 100%;
+        background: #F2F2F2;
+      }
+
+      .container{
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 40px;
+      }
+
+      .name{
+        font-weight: 600;
+      }
+
+      .container p{
+        color: #222222;
+        margin-bottom: 1.1rem;
+        line-height: 25px;
+        font-size: 1rem;
+      }
+
+      .container .code{
+        font-size: 2rem;
+        font-weight: 600;
+        background: rgb(250, 255, 187);
+        width: max-content;
+        padding: 1rem 0.8rem;
+        letter-spacing: 5px;
+      }
+
+      .container .alert{
+        color: red;
+      }
+
+      @media only screen and (max-width: 640px) {
+        .container{
+            width: 90% !important;
+        }
+
+        .main{
+          padding: 0;
+        }
+
+        .container p{
+          font-size: 0.9rem;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+  <div class="main">
+    <div class="container">
+      <p>Hi <span class="name"><%= Name %></span>,</p>
+      <p>Here is your NonAcademy login code. Don't share this code with anyone else ⚠️ </p>
+      <p class="code"><%= Code %></p>
+      <p class="alert">This code will be expire within 10 minutes.</p>
+    </div>
+  </div>
+  </body>
+</html>
